@@ -1,4 +1,4 @@
-package cobrascales.optimization.joptimizer
+package cobrascales.optimization
 
 import com.joptimizer.functions.ConvexMultivariateRealFunction
 import com.joptimizer.functions.LinearMultivariateRealFunction
