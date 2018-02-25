@@ -1,6 +1,11 @@
 package cobrascales_build.test
 import cbt._
 class Build(val context: Context) extends BaseBuild{
+
+    // This disables some caching, but allows libraries (Optimus) to break out of 
+  // their own dependencies, which some reflection magic requires:
+  override def flatClassLoader = true 
+
   override def dependencies = (
     super.dependencies ++ // don't forget super.dependencies here for scala-library, etc.
     Seq(
