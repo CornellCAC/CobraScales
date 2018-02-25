@@ -13,7 +13,6 @@ object JOptimizerCS {
     println("*** Running JOptimizer tests ***")
 
     TestTry(runSimpleLP)
-    println("after runSimpleLP") //DEBUG
 
   }
 
@@ -22,7 +21,7 @@ object JOptimizerCS {
 
   **/
 
-  def runSimpleLP: Unit = {
+  def runSimpleLP(): Unit = {
     // Objective function (plane)
     //minimize 3x+4y
     val objectiveFunction: LinearMultivariateRealFunction =
